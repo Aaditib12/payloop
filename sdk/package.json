@@ -1,0 +1,49 @@
+{
+  "name": "@web-soroban/payloop",
+  "version": "0.1.0",
+  "description": "Non-custodial USDC subscriptions on Stellar: build, sign, and track PayLoop policies on testnet or mainnet",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test index.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "stellar",
+    "soroban",
+    "usdc",
+    "subscriptions",
+    "recurring-payments",
+    "payloop"
+  ],
+  "peerDependencies": {
+    "@stellar/stellar-sdk": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebSoroban/payloop.git",
+    "directory": "sdk"
+  },
+  "homepage": "https://github.com/WebSoroban/payloop#readme",
+  "bugs": {
+    "url": "https://github.com/WebSoroban/payloop/issues"
+  },
+  "devDependencies": {
+    "@stellar/stellar-sdk": "^14.6.1",
+    "@types/node": "^25.9.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
