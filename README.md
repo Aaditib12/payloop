@@ -69,7 +69,7 @@ const plan = await payloop.activeSubscription({
 })
 ```
 
-Or try it without code at [websoroban.in/payloop](https://websoroban.in/payloop).
+Or try it without code at [payloop.websoroban.in](https://payloop.websoroban.in).
 
 ## Develop
 

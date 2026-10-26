@@ -16,5 +16,5 @@ export const config = {
   merchant: required('MERCHANT_ADDRESS'),
   planAmountUsdc: required('PLAN_AMOUNT_USDC'),
   planIntervalSeconds: Number(required('PLAN_INTERVAL_SECONDS')),
-  subscribeUrl: process.env.SUBSCRIBE_URL || `https://websoroban.in/payloop?network=${process.env.PAYLOOP_NETWORK?.trim() || 'testnet'}`,
+  subscribeUrl: process.env.SUBSCRIBE_URL || `https://payloop.websoroban.in/?network=${process.env.PAYLOOP_NETWORK?.trim() || 'testnet'}`,
 };
